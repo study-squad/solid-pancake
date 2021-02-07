@@ -410,7 +410,7 @@ ul>li {
 .btn {
     text-transform: uppercase;
     font-family: var(--titlesFont);
-    font-style: 24px;
+    font-size: 24px;
     padding: 2px 30px;
     background: var(--black);
     color: var(--yellow);
