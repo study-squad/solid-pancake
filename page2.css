@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-    overflow: hidden;
+    min-width: 1440px;
 }
 
 body {
@@ -30,6 +30,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #fcf5e6;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
 
 .hero {
     height: 100vh;
@@ -41,7 +51,7 @@ body {
     background: url('./img/bg/hero.jpg') center -370px / cover no-repeat;
     width: 100%;
     height: 180px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,3 +110,190 @@ body {
     font-size: 16px;
     padding: 5px 10px;
 }
+
+.product__list {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1140px;
+    height: 710px;
+    display: flex;
+    background: rgb(255, 201, 47);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.product__img {
+    width: 570px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+
+.product__item {
+    width: 515px;
+    height: 440px;
+}
+
+.product-information__list {
+    background: #fcf5e6;
+    width: 570px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.product__title {
+    font: var(--titlesFont);
+    font-weight: bold;
+    color: var(--yellow);
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.product__name {
+    font: var(--titlesFont);
+    font-weight: bold;
+    color: var(--black);
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.product__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    margin-top: 17px;
+    height: 50px;
+    width: 120px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.about-product {
+    margin-bottom: 60px;
+}
+
+.about-product li {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.about-product li:last-child {
+    margin-bottom: 0;
+}
+
+.size-filter {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.size-filter__item {
+    width: 49px;
+    height: 49px;
+    background-color: rgba(33, 33, 33, 0);
+    border: 2px solid #e0d9c8;
+    margin-right: 8px;
+}
+
+.size-filter__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #212121;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-transform: uppercase;
+}
+
+.size-filter__item:last-child {
+    margin-right: 0;
+}
+
+.size-filter__item--activ {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+.size-filter__item--not .size-filter__link {
+    color: #e0d9c8;
+}
+
+.color-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.color-filter__item {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 15px;
+}
+
+.color-filter__item:last-child {
+    margin-right: 0;
+}
+
+.color-filter__item--black {
+    background-color: #2f2c25;
+}
+
+.color-filter__item--white {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+    background-color: rgba(216, 39, 39, 0);
+    border: 2px solid #e0d9c8;
+}
+
+.color-filter__item--green {
+    background-color: #529029;
+}
+
+.color-filter__item--blue {
+    background-color: #39498d;
+}
+
+.color-filter__item--red {
+    background-color: #d82727;
+}
+
+.color-filter__item--activ {
+    width: 29px;
+    height: 29px;
+    border-radius: 15px;
+    background-color: rgba(255, 201, 47, 0);
+    border: 3px solid var(--yellow);
+}
+
+.btn {
+    position: relative;
+    width: 209px;
+height: 51px;
+    text-transform: uppercase;
+    font-family: var(--titlesFont);
+    font-size: 28px;
+    background: var(--black);
+    color: var(--yellow);
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background: var(--red);
+    color: #fff;
