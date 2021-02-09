@@ -356,6 +356,7 @@ ul>li {
     width: 1100px;
     background-color: #fcf5e6;
     border: 10px solid var(--yellow);
+    margin-bottom: 80px;
 }
 
 .tabs__item--specification {
@@ -403,29 +404,29 @@ ul>li {
     height: 452px;
 }
 
-.pic {
+.size__pic {
     width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pic__item {
+.size-pic__item {
     height: 250px;
     width: 250px;
 }
 
-.pic__text {
+.size-pic__text {
     display: flex;
     flex-direction: column;
     font-size: 13px;
-color: #1b1b1b;
-font-family: "Roboto";
-position: relative;
-top: 5%;
+    color: #1b1b1b;
+    font-family: "Roboto";
+    position: relative;
+    top: 5%;
 }
 
-.pic__text li {
+.size-pic__text li {
     margin-bottom: 13px;
 }
 
@@ -435,9 +436,11 @@ top: 5%;
     border-spacing: 0;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #e0d9c8;
-  }
+}
 
 .table th {
     text-align: center;
@@ -446,4 +449,204 @@ table, th, td {
 
 .table td {
     text-align: center;
+}
+
+.tabs__item--delivery {
+    display: flex;
+    height: 259px;
+}
+
+.delivery__pic {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery-logo__item {
+    height: 170px;
+    width: 185px;
+}
+
+.tabs__item--delivery__line {
+    height: 100%;
+    width: 0.5px;
+    background: #e0d9c8;
+    position: relative;
+    left: 2%;
+}
+
+.delivery__text {
+    padding-right: 55px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.delivery__text li {
+    margin-bottom: 13px;
+}
+
+.tabs__item--about {
+    display: flex;
+    height: 259px;
+}
+
+.harly__pic {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.harly-logo__item {
+    height: 70px;
+    width: 250px;
+}
+
+.tabs__item--about__line {
+    height: 100%;
+    width: 0.5px;
+    background: #e0d9c8;
+    position: relative;
+    left: 3%;
+}
+
+.about__text {
+    padding-right: 55px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer {
+    margin-bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__container {
+    width: 1105px;
+}
+
+.site-menu {
+    margin-bottom: 115px;
+    width: 100%;
+}
+
+.site-menu__sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-menu__col {
+    margin-right: 20px;
+}
+
+.site-menu__col:last-child {
+    margin-right: 0px;
+}
+
+.site-menu__title {
+    font-family: var(--titlesFont);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.site-menu__item {
+    margin-bottom: 15px;
+}
+
+.site-menu__link {
+    color: #737373;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site-menu__link:hover {
+    color: var(--red);
+}
+
+.site-menu__text {
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.site-menu__text-row {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.extras {
+    display: flex;
+    margin-bottom: 95px;
+    width: 100%;
+}
+
+.extras__col {
+    margin-right: 20px;
+    flex: 1;
+}
+
+.extras__col:last-child {
+    margin-right: 0px;
+}
+
+.extras__best {
+    text-align: center;
+    color: #fff;
+    background: #232323;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--titlesFont);
+    text-transform: uppercase;
+    padding: 39px 10%;
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.extras__col-socials {
+    height: 100%;
+    background: url('./img/bg/pattern.png') center center / 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: 50px;
+}
+
+.socials__item:last-child {
+    margin-right: 0px;
+}
+
+.socials__link {
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+
+.socials__link:hover .socials__icon {
+    fill: var(--red);
+}
+
+.socials__icon {
+    width: 100%;
+    height: 100%;
 }
