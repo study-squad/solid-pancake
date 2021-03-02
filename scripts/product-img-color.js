@@ -15,5 +15,4 @@
             control.closest('.color-filter__item').classList.add(activeClass);
         })
     })
-
 }());
