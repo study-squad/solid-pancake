@@ -141,6 +141,11 @@ ul>li {
     width: 515px;
     height: 440px;
     position: absolute;
+    opacity: 0;
+}
+
+.products__item--color-visible {
+    opacity: 1;
 }
 
 .product-information__list {
